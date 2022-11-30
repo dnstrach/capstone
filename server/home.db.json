@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "name": "Lavendar", 
+        "price": "$15.00",
+        "size": "15 mL"
+    },
+
+    {
+        "id": 2,
+        "name": "Rose",
+        "price": "$15.00",
+        "size": "15 mL"  
+    },
+
+    {
+        "id": 3,
+        "name": "Jasmine", 
+        "price": "$15.00",
+        "size":  "15 mL"
+    },
+
+    {
+        "id": 4,
+        "name": "Eucalyptus",
+        "price": "$15.00",
+        "size": "15 mL"
+    },
+
+    {
+        "id": 5,
+        "name": "Orange",
+        "price": "$15.00",
+        "size": "15 mL"
+    },
+
+    {
+        "id": 6,
+        "name": "Lime",
+        "price": "$15.00",
+        "size": "15 mL"
+    },
+
+    {
+        "id": 7,
+        "name": "Lemon",
+        "price": "$15.00", 
+        "size":"15 mL"  
+    },
+
+    {
+        "id": 8,
+        "name": "Lemon Grass",
+        "price": "$15.00", 
+        "size":"15 mL"  
+    }
+]
