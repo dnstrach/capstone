@@ -7,10 +7,12 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-const {getOils, addToCart, getCart} = require('./controller')
+const {getOils, addToCart, getCart, deleteOil, updateItemQ} = require('./controller')
 
-app.get('/essential-oils', getOils)
-app.post('/add-cart-oil/:id', addToCart)
+app.get('/oils', getOils)
+app.post('/cart', addToCart)
 app.get('/cart', getCart)
+app.delete('/cart/:id', deleteOil)
+app.put('/cart/:id', updateItemQ)
 
 app.listen(5501, () => console.log("Server is running on port 5501"))
