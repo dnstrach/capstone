@@ -4,24 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="cart.css" rel="stylesheet">
+        <!-- Italiana -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Italiana&family=News+Cycle&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    
+        <!-- Quicksand -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle&family=Quicksand&display=swap" rel="stylesheet">
+    
+        <!-- Raleway 300-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
     <title>Cart Page</title>
 </head>
 <body>
     <header>
-        <h1>Shopping Bag</h1>
-        <nav>
-            <ol>
-                <li class="nav-btn"><a href="./home.html">Home</a></li>
-                <li class="nav-btn" id="cart"><a href="./cart.html">Cart</a></li>
-            </ol>
-        </nav>
-        <hr class="hortizontal-line">
-        <hr class="hortizontal-line">
+        <div class="title-block">
+            <h1>Shopping Bag</h1>
+            <nav>
+                <ol style="list-style: none;">
+                    <li class="nav-btn"><a href="./home.html">Home</a></li>
+                    <li class="nav-btn"><a href="./cart.html">Cart</a></li>
+                </ol>
+            </nav>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="line">
+            <hr id="line1">
+            <hr id="line2">
+        </div>
     </header>
 
+
     <main>
-        <section id="cart-container"></section>
-        <p id="total"></p>
+        <div class="cart-total">
+            <section class="cart-container"></section>
+            <p id="total"></p>
+        </div>
     </main>
    
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>

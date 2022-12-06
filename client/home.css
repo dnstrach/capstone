@@ -1,5 +1,173 @@
-cards same class
-flex - justify content space evenly and align center
-flex wrap - items too long will go to new line 
-crop welcome images
-find way to create transparent backgrounds
+body{
+  display: flex;
+  flex-direction: column;
+}
+
+.title-block{
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+}
+
+h1{
+  font-family: 'Italiana', serif;
+  font-size: 75px;
+  color: #301466;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.nav-btn{
+  margin-right: 2em;
+  display: inline;
+  align-items: center;
+  column-gap: 0px;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+}
+
+ol{
+  margin-top: 60px;
+}
+
+a:link { 
+  text-decoration: none; 
+}
+
+a:visited {
+  color: #301466
+}
+
+#line1{
+  border: 0;
+  border-top: 3px solid #84a98c;
+  padding: 0;
+}
+
+#line2{
+  border: 0;
+  border-top: 3px solid #84a98c;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.intro-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/*view port*/
+/* position fixed? look up way so stay in same place even if scroll and header */
+
+.main-img{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#main-img1{
+  width: 30%
+}
+
+#main-img2{
+  width: 30%
+}
+
+#main-img3{
+  width: 30%
+}
+
+h2{
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 50px;
+  color: #301466;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+p{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 25px;
+  color: #301466;
+}
+
+.about{
+  margin-left: 3em;
+  margin-right: 3em;
+  text-align: justify;
+}
+
+.welcome-box{
+  border-style: solid;
+  color: #84a98c;
+  box-shadow: 10px 10px #dee2e6;
+  width: 100em;
+  margin-top: 3em;
+}
+
+.oil-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#oil-name{
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.price-size{
+  display: flex;
+  justify-content: space-evenly;
+  width: 300px;
+  height: 50px;
+  margin-bottom: 1em;
+}
+
+.oil-image{
+  max-width:350px;
+  max-height:215px;
+}
+
+.oils-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 75px;
+  column-gap: 0px;
+}
+
+.items{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-cart-btn{
+  color: white;
+  background-color: #301466;
+  font-family: 'Raleway', sans-serif;
+  font-size: 20px;
+  border-radius: 12px;
+  width: 8em;
+  height: 2em;
+}
+
+#row-divider{
+  border-top: 1px solid #84a98c;
+}
+
+
+
+
+
+

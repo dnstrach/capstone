@@ -1,1 +1,188 @@
-cards same class
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-block{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+}
+  
+h1{
+    font-family: 'Italiana', serif;
+    font-size: 75px;
+    color: #301466;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+  
+.nav-btn{
+    margin-right: 2em;
+    display: inline;
+    align-items: center;
+    column-gap: 0px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+}
+  
+ol{
+    margin-top: 80px;
+}
+  
+a:link { 
+    text-decoration: none; 
+}
+  
+a:visited {
+    color: #301466
+}
+  
+  
+#line1{
+    border: 0;
+    border-top: 3px solid #84a98c;
+    padding: 0;
+}
+  
+#line2{
+    border: 0;
+    border-top: 3px solid #84a98c;
+    padding: 0;
+}
+
+.oil-image{
+    max-width:350px;
+    max-height:215px;
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.img-name{
+    display: flex;
+}
+
+
+.cart-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    color: #301466;
+    box-shadow: 10px 10px #dee2e6;
+    width: 65em;
+    margin-top: 5em;
+}
+
+#delete-btn{
+    color: white;
+    background-color: #301466;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 30px;
+    width: 30px;
+    margin-top: 1em
+}
+
+#oil-name{
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+    font-size: 35px;
+    color: #301466;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-bottom: 0;
+}
+
+.size-quantity-price{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+#oil-price{
+    margin-bottom: 0;
+}
+
+.quantity{
+    display: flex
+}
+
+#oil-price{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #301466;
+    margin-bottom: 0;
+}
+
+#oil-size{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #301466;
+    margin-bottom: 0;
+}
+
+#oil-quantity{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    color: #301466;
+    margin-top: 2em;
+    margin-bottom: 0;
+}
+
+#minus-btn{
+    color: white;
+    background-color: #301466;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 30px;
+    width: 30px;
+    margin-top: 2.5em;
+    margin-right: 1em;
+}
+
+#plus-btn{
+    color: white;
+    background-color: #301466;
+    font-family: 'Raleway', sans-serif;
+    font-size: 20px;
+    border-radius: 12px;
+    height: 30px;
+    width: 30px;
+    margin-top: 2.5em;
+    margin-left: 1em;
+}
+
+.cart-msg{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    color: #301466;
+}
+
+#item-divider{
+    border-top: 1px solid #84a98c;
+    width: 60em;
+}
+
+.cart-total{
+    display: flex;
+    flex-direction: column;
+}
+
+#total{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+    color: #301466;
+    margin-right: 4em;
+    margin-left: 28em;
+    text-align: center;
+}

@@ -2,7 +2,7 @@
 
 const baseURL = 'http://localhost:5501'
 
-const oils = document.querySelector('#oils-container')
+const oils = document.querySelector('.oils-container')
 const addCartbtns = document.getElementsByClassName('oil-card')
 
 
@@ -41,13 +41,21 @@ const createOilCard = (oilItem) => {
     oilCard.classList.add('oil-card')
 
     oilCard.innerHTML = `
-        <img alt="oil-image" src=${oilItem.img}>
-        <p>${oilItem.name}</p>
-        <p>${oilItem.price}</p>
-        <p>${oilItem.size}</p>
-        <button id="${oilItem.id}">Add to Cart</button>
+        <div class="items">
+        <img class="oil-image" alt="oil-image" src=${oilItem.img}>
+        <div class="oil-text">
+        <p class="oil-content "id="oil-name">${oilItem.name}</p>
+            <div class="price-size">
+                <p class="oil-content id="oil-price">Price: $${oilItem.price}</p>
+                <p class="oil-content id="oil-size"> Size: ${oilItem.size}</p>
+            </div>
+        </div>
+        <button class="add-cart-btn" id="${oilItem.id}">Add to Cart</button>
+        </div>
+        <hr id="row-divider">
     `
     oils.appendChild(oilCard)
+
     document.getElementById(`${oilItem.id}`).addEventListener('click', () => {
         addToCart(oilItem)
     })

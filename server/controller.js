@@ -41,9 +41,7 @@ module.exports = {
     //tied to cart.html page
     getCart: (req, res) => {
 
-
         res.status(200).send(user[0].cart)
-
     },
 
     //tied to x button
