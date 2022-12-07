@@ -149,6 +149,13 @@ p{
   justify-content: center;
 }
 
+.name-price-size{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .add-cart-btn{
   color: white;
   background-color: #301466;
