@@ -17,7 +17,7 @@ h1{
   margin-left: 10px;
 }
 
-.nav-btn{
+.nav-link{
   margin-right: 2em;
   display: inline;
   align-items: center;
@@ -28,6 +28,10 @@ h1{
 
 ol{
   margin-top: 60px;
+}
+
+a{
+  color: #301466
 }
 
 a:link { 
@@ -89,7 +93,7 @@ h2{
 
 p{
   font-family: 'Quicksand', sans-serif;
-  font-size: 25px;
+  font-size: 28px;
   color: #301466;
 }
 

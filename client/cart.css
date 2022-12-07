@@ -22,8 +22,12 @@ h1{
     margin-top: 20px;
     margin-left: 10px;
 }
+
+a{
+    color: #301466
+}
   
-.nav-btn{
+.nav-link{
     margin-right: 2em;
     display: inline;
     align-items: center;
