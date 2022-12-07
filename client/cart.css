@@ -86,7 +86,7 @@ a:visited {
     background-color: #301466;
     font-family: 'Raleway', sans-serif;
     font-size: 20px;
-    border-radius: 12px;
+    border-radius: 90px;
     height: 30px;
     width: 30px;
     margin-top: 1em
@@ -106,10 +106,6 @@ a:visited {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-}
-
-#oil-price{
-    margin-bottom: 0;
 }
 
 .quantity{
@@ -139,26 +135,22 @@ a:visited {
 }
 
 #minus-btn{
-    color: white;
-    background-color: #301466;
+    color: #301466;
+    background-color: white;
+    border: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    border-radius: 12px;
-    height: 30px;
-    width: 30px;
-    margin-top: 2.5em;
+    font-size: 30px;
+    margin-top: 1.5em;
     margin-right: 1em;
 }
 
 #plus-btn{
-    color: white;
-    background-color: #301466;
+    color: #301466;
+    background-color: white;
+    border: white;
     font-family: 'Raleway', sans-serif;
-    font-size: 20px;
-    border-radius: 12px;
-    height: 30px;
-    width: 30px;
-    margin-top: 2.5em;
+    font-size: 30px;
+    margin-top: 1.5em;
     margin-left: 1em;
 }
 

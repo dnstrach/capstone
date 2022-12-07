@@ -1,19 +1,11 @@
-//const { default: axios } = require("axios")
-
 const baseURL = 'http://localhost:5501'
 
 const oils = document.querySelector('.oils-container')
 const addCartbtns = document.getElementsByClassName('oil-card')
 
-
-//axios get request and invoking at bottom of page initally only shows oilItems json in inspect
-//invoking displayOils function in getAllOils containing oilItems array to show all oils in their cards on page
 const getAllOils = () => {
     axios.get(`${baseURL}/oils`)
         .then((res) => {
-            //console.log(res.data)
-            //shows oilItems array in inspect console
-
             displayOils(res.data)
         })
         .catch((err) => {
@@ -21,55 +13,40 @@ const getAllOils = () => {
         })
 }
 
-//looping through array pulling each individual object 
-//invoking createOilCard function inside displayOils with individual object to create and input card info
 const displayOils = (oilItems) => {
     for(let i = 0; i < oilItems.length; i++){
-        //console.log(oilItems[i])
-        //will show 8 separate logs of objects in inspect console
 
         createOilCard(oilItems[i])
     } 
 }
 
-//creating oil 'cards' in it's own section with class
-//inner.html allows each card to contain data from oilItem object
-//adding each oil card to oils container as child
-//getting button by id and adding click event listener with callback function invoking addToCart(oil)
-const createOilCard = (oilItem) => {
+const createOilCard = (oilItems) => {
     const oilCard = document.createElement('section')
-    oilCard.classList.add('oil-card')
 
     oilCard.innerHTML = `
         <div class="items">
-        <img class="oil-image" alt="oil-image" src=${oilItem.img}>
-        <div class="oil-text">
-        <p class="oil-content "id="oil-name">${oilItem.name}</p>
-            <div class="price-size">
-                <p class="oil-content id="oil-price">Price: $${oilItem.price}</p>
-                <p class="oil-content id="oil-size"> Size: ${oilItem.size}</p>
+            <img class="oil-image" alt="oil-image" src=${oilItems.img}>
+            <div class="name-price-size">
+                <p class="oil-content "id="oil-name">${oilItems.name}</p>
+                    <div class="price-size">
+                        <p id="oil-price">Price: $${oilItems.price}</p>
+                        <p id="oil-size"> Size: ${oilItems.size}</p>
+                    </div>
             </div>
-        </div>
-        <button class="add-cart-btn" id="${oilItem.id}">Add to Cart</button>
+            <button class="add-cart-btn" id="${oilItems.id}">Add to Cart</button>
         </div>
         <hr id="row-divider">
     `
     oils.appendChild(oilCard)
 
-    document.getElementById(`${oilItem.id}`).addEventListener('click', () => {
-        addToCart(oilItem)
+    document.getElementById(`${oilItems.id}`).addEventListener('click', () => {
+        addToCart(oilItems)
+        console.log(oilItems)
     })
     
 }
 
-//Need to create stopper for add to cart button can only add item once or figure out way to also connect add to cart button to quantity
-
-//add to cart function receiving oil body object as parameter
-//logging oil to show object in inspect
-//axios.post with endpoint (not needing param because included in oil object) and oil object
-//responding with alert with response message from BE
 const addToCart = (oilItem) => {
-    console.log(oilItem)
     axios.post(`${baseURL}/cart`, oilItem)
         .then((res) => {
             alert(res.data)

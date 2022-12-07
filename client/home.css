@@ -58,9 +58,6 @@ a:visited {
   justify-content: center;
 }
 
-/*view port*/
-/* position fixed? look up way so stay in same place even if scroll and header */
-
 .main-img{
   display: flex;
   align-items: center;
@@ -165,9 +162,3 @@ p{
 #row-divider{
   border-top: 1px solid #84a98c;
 }
-
-
-
-
-
-
