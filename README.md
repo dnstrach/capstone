@@ -14,17 +14,17 @@ Installation
 
 #### Nodemon
 1. Install nodemon to run code for compiled files
-* Run npm install -g nodemon on your system
+⋅⋅⋅ Run npm install -g nodemon on your system
 2. Initialize nodemon
-* Run npm init -y ---> creates package.json file
+⋅⋅⋅ Run npm init -y ---> creates package.json file
 
 #### Express
 1. Install express to build server, match HTTP methods and use endpoint from front end requests
-* run npm install express
+⋅⋅⋅ run npm install express
 
 #### Cors
 2. Install cors to for port accessibility 
-* Run npm install cors
+⋅⋅⋅ Run npm install cors
 
 #### Run Server
 1. Use the following boiler plate 
@@ -52,7 +52,7 @@ app.listen(5501, () => console.log("Server is running on port 5501"))
 
 #### Axios
 1. Install axios to allow server requests by making http requests and using URLs to communicate with server using JSON
-* Run npm install axios
+⋅⋅⋅ Run npm install axios
 2. Import axios in html file(s)
 ```html
     <!-- import axios -->
