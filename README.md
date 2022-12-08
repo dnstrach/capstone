@@ -3,6 +3,10 @@ Essential Oil Blends
 
 Essential Oil Blends is a fullstack web application designed for consumer shopping. This application breaks down the basics of creating an online shopping site with an items home page and shopping cart page. 
 
+![Homepage](/static/home.png)
+![Oil Items](/static/oils.png)
+![Cart](/static/cart.png)
+
 Technologies
 ------
 JavaScript, HTML/CSS, Nodemon, Axios, Cors, Express
