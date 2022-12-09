@@ -1,7 +1,6 @@
 const baseURL = 'http://localhost:5501'
 
 const cart = document.querySelector('.cart-container')
-const minusbtn = document.getElementById('minus-btn')
 let total = 0 
 
 const getCart = () => {
@@ -75,7 +74,7 @@ const createCartCard = (addedItem) => {
     `
     cart.appendChild(cartCard)
 
-    document.getElementById('total').textContent= `Total: $${total}.00`
+    document.getElementById('total').textContent = `Total: $${total}.00`
 
 }
 
