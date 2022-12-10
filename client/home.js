@@ -1,12 +1,12 @@
 const baseURL = 'http://localhost:5501'
 
 const oils = document.querySelector('.oils-container')
-const addCartbtns = document.getElementsByClassName('oil-card')
 
 const getAllOils = () => {
     axios.get(`${baseURL}/oils`)
         .then((res) => {
             displayOils(res.data)
+
         })
         .catch((err) => {
             console.log(err)
@@ -41,7 +41,6 @@ const createOilCard = (oilItems) => {
 
     document.getElementById(`${oilItems.id}`).addEventListener('click', () => {
         addToCart(oilItems)
-        console.log(oilItems)
     })
     
 }

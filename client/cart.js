@@ -21,6 +21,7 @@ const deleteItem = (id) => {
         .then((res) => {
             cart.innerHTML = ``
             displayCart(res.data)
+
         })
         .catch((err) => {
             console.log(err)
@@ -30,6 +31,7 @@ const deleteItem = (id) => {
 const updateItemQ = (id, type) => {
     axios.put(`${baseURL}/cart/${id}`, {type})
         .then((res) => {
+            console.log(res.data)
             cart.innerHTML = ``
             displayCart(res.data)
         })
@@ -43,7 +45,6 @@ const displayCart = (addedItems) => {
         cartMsg.textContent = "Cart is empty!"
         cart.appendChild(cartMsg)
     }else{
-        cart.innerHTML = ``
         for (let i = 0; i < addedItems.length; i++){
             createCartCard(addedItems[i])
         }
